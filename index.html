@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 泡沫检测仪 · AI Bubble Detector</title>
+<meta name="description" content="拖动几个指标，看看这个 AI 项目有多少泡沫。娱乐向的 AI 泡沫指数计算器。">
+<style>
+  :root{
+    --bg:#f6f7f5; --card:#ffffff; --ink:#1c1f1d; --ink-50:#6b716c; --line:rgba(28,31,29,.10);
+    --g:#4a9d5b; --y:#e0b13a; --r:#d9534f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB",sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased;padding:28px 16px 48px}
+  .wrap{max-width:600px;margin:0 auto}
+  h1{font-size:26px;margin:0 0 4px;letter-spacing:-.02em}
+  .sub{color:var(--ink-50);font-size:14px;margin:0 0 22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    box-shadow:0 1px 2px rgba(28,31,29,.04),0 8px 30px rgba(28,31,29,.05);padding:22px}
+  .gauge{display:block;margin:2px auto 0;width:280px;max-width:100%}
+  .score{font-size:52px;font-weight:800;text-align:center;letter-spacing:-.03em;line-height:1;margin-top:-14px;font-variant-numeric:tabular-nums}
+  .verdict{text-align:center;font-size:20px;font-weight:700;margin-top:8px}
+  .quip{text-align:center;color:var(--ink-50);font-size:14px;margin:6px 0 4px;min-height:20px}
+  .controls{margin-top:20px;display:flex;flex-direction:column;gap:18px}
+  .ctrl label{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;font-weight:600;margin-bottom:7px}
+  .ctrl .v{font-variant-numeric:tabular-nums;color:var(--ink-50);font-weight:600}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:99px;
+    background:var(--line);outline:none;cursor:pointer}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;
+    background:var(--ink);border:3px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.25)}
+  input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--ink);border:3px solid #fff}
+  .ends{display:flex;justify-content:space-between;font-size:11px;color:var(--ink-50);margin-top:5px}
+  .foot{color:var(--ink-50);font-size:12px;text-align:center;margin-top:22px;line-height:1.6}
+  .foot a{color:var(--ink-50)}
+  .tag{display:inline-block;background:rgba(28,31,29,.05);border-radius:6px;padding:2px 8px;font-size:11px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🫧 AI 泡沫检测仪</h1>
+  <p class="sub">AI Bubble Detector · 拖动下面几个指标，看看手上这个 AI 项目泡沫有多大。</p>
+
+  <div class="card">
+    <svg class="gauge" viewBox="0 0 260 158" aria-hidden="true">
+      <defs>
+        <linearGradient id="arc" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#4a9d5b"/>
+          <stop offset="0.5" stop-color="#e0b13a"/>
+          <stop offset="1" stop-color="#d9534f"/>
+        </linearGradient>
+      </defs>
+      <path d="M30,140 A100,100 0 0 1 230,140" fill="none" stroke="url(#arc)" stroke-width="18" stroke-linecap="round"/>
+      <g id="needle" transform="rotate(-90 130 140)">
+        <line x1="130" y1="140" x2="130" y2="52" stroke="#1c1f1d" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <circle cx="130" cy="140" r="8" fill="#1c1f1d"/>
+    </svg>
+    <div class="score" id="score">0</div>
+    <div class="verdict" id="verdict">—</div>
+    <div class="quip" id="quip"></div>
+
+    <div class="controls" id="controls"></div>
+  </div>
+
+  <p class="foot">
+    <span class="tag">仅供娱乐 · not investment advice</span><br>
+    用 <b>quickship</b> 一键发布到 GitHub Pages · <a id="repo" href="#" target="_blank" rel="noopener">source</a>
+  </p>
+</div>
+
+<script>
+  var METRICS = [
+    {key:"mult",  w:0.22, label:"估值 / 年收入 倍数", lo:"合理", hi:"天文数字", def:80},
+    {key:"raise", w:0.20, label:"融资额 vs 真实收入", lo:"收入撑得起", hi:"纯靠故事", def:75},
+    {key:"buzz",  w:0.15, label:"Pitch 里的 buzzword 密度", lo:"讲人话", hi:"AGI/颠覆/范式刷屏", def:60},
+    {key:"cust",  w:0.18, label:"离“真实付费客户”的距离", lo:"一堆人在付钱", hi:"还没有", def:70},
+    {key:"halo",  w:0.12, label:"团队“光环 vs 出货”", lo:"疯狂出货", hi:"全是 title", def:55},
+    {key:"profit",w:0.13, label:"“现在先不谈盈利”指数", lo:"盯着单位经济", hi:"格局要大", def:65}
+  ];
+  var BANDS = [
+    {min:0,  name:"清醒",     emoji:"😌", color:"#4a9d5b", quip:"难得，这个还在踏实做真东西。"},
+    {min:20, name:"微醺",     emoji:"🙂", color:"#68a34a", quip:"有点故事成分，但基本面还站得住。"},
+    {min:40, name:"上头",     emoji:"😵‍💫", color:"#e0b13a", quip:"泡沫在悄悄吹大，估值开始脱离地心引力。"},
+    {min:60, name:"泡沫预警", emoji:"🫧", color:"#e08a3a", quip:"叙事 >> 基本面，击鼓传花进行中。"},
+    {min:80, name:"见顶信号", emoji:"🚨", color:"#d9534f", quip:"基本是空气，离场比进场更重要。"}
+  ];
+
+  var controls = document.getElementById("controls");
+  METRICS.forEach(function(m){
+    var d = document.createElement("div"); d.className="ctrl";
+    d.innerHTML =
+      '<label><span>'+m.label+'</span><span class="v" id="v_'+m.key+'">'+m.def+'</span></label>'+
+      '<input type="range" min="0" max="100" value="'+m.def+'" id="r_'+m.key+'">'+
+      '<div class="ends"><span>'+m.lo+'</span><span>'+m.hi+'</span></div>';
+    controls.appendChild(d);
+  });
+
+  function band(s){ var b=BANDS[0]; for(var i=0;i<BANDS.length;i++){ if(s>=BANDS[i].min) b=BANDS[i]; } return b; }
+  function compute(){
+    var s=0;
+    METRICS.forEach(function(m){
+      var val=+document.getElementById("r_"+m.key).value;
+      document.getElementById("v_"+m.key).textContent=val;
+      s += val*m.w;
+    });
+    s=Math.round(s);
+    var b=band(s);
+    document.getElementById("score").textContent=s;
+    document.getElementById("score").style.color=b.color;
+    document.getElementById("verdict").textContent=b.emoji+" "+b.name;
+    document.getElementById("verdict").style.color=b.color;
+    document.getElementById("quip").textContent=b.quip;
+    var ang=-90 + s*1.8;
+    document.getElementById("needle").setAttribute("transform","rotate("+ang+" 130 140)");
+  }
+  METRICS.forEach(function(m){ document.getElementById("r_"+m.key).addEventListener("input",compute); });
+  // repo self-link (works once published)
+  try{ var p=location.pathname.replace(/\/$/,"").split("/").filter(Boolean);
+       if(location.host.indexOf("github.io")>-1 && p.length){ document.getElementById("repo").href="https://github.com/"+location.host.split(".")[0]+"/"+p[0]; } }catch(e){}
+  compute();
+</script>
+</body>
+</html>
