@@ -1,0 +1,18 @@
+{
+  "updated_at": "2026-07-29T07:11:37Z",
+  "series": {
+    "pce_yoy": {
+      "value": 3.4,
+      "unit": "%",
+      "asof": "2026-05-01",
+      "source": "FRED PCEPILFE (YoY)"
+    },
+    "a_oas": {
+      "value": 67,
+      "unit": "bp",
+      "asof": "2026-07-27",
+      "source": "FRED BAMLC0A3CA"
+    }
+  },
+  "note": "GitHub Actions 自动写入；仅官方 API 序列，其余指标见页面手抄清单。"
+}
