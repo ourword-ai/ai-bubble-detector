@@ -5,8 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
 <meta name="supported-color-schemes" content="light">
-<title>AI 泡沫检测仪 · 监测面板</title>
-<meta name="description" content="AI 基建泡沫监测面板：19 条监测条件（干柴 / 火药 / 扳机三级）、倒计时、八维度、红线自审与证伪清单。数据带日期与出处，不构成投资建议。">
+<title>AI 泡沫检测仪 —— 19 条红线实时监测 AI 基建泡沫 | AI Bubble Monitor</title>
+<meta name="description" content="AI 泡沫到哪一步了？19 条红线实时监测 AI 基建泡沫：干柴（宏观环境）/ 火药（金融结构）/ 扳机（引爆事件）三级判定、倒计时、八维度、与 1847 铁路和 2000 互联网泡沫对照。每个数字都带日期与出处，附撤销条件与证伪清单。不构成投资建议。">
+<link rel="canonical" href="https://ourword-ai.github.io/ai-bubble-detector/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="keywords" content="AI 泡沫,AI bubble,AI 基建,泡沫监测,英伟达,甲骨文,OpenAI IPO,数据中心,资本支出,AI bubble monitor">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI 泡沫检测仪 · AI Bubble Monitor">
+<meta property="og:title" content="AI 泡沫检测仪 —— 19 条红线实时监测 AI 基建泡沫">
+<meta property="og:description" content="三级判定（干柴 / 火药 / 扳机）、倒计时、八维度、红线自审与证伪清单。每个数字都带日期与出处。">
+<meta property="og:url" content="https://ourword-ai.github.io/ai-bubble-detector/">
+<meta property="og:image" content="https://ourword-ai.github.io/ai-bubble-detector/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI 泡沫检测仪 —— 19 条红线实时监测 AI 基建泡沫">
+<meta name="twitter:description" content="三级判定（干柴 / 火药 / 扳机）、倒计时、八维度、红线自审与证伪清单。每个数字都带日期与出处。">
+<meta name="twitter:image" content="https://ourword-ai.github.io/ai-bubble-detector/og-image.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"AI 泡沫检测仪","alternateName":"AI Bubble Monitor","url":"https://ourword-ai.github.io/ai-bubble-detector/","inLanguage":"zh-CN","description":"19 条红线实时监测 AI 基建泡沫：干柴 / 火药 / 扳机三级判定、倒计时、八维度、红线自审与证伪清单。数据带日期与出处，不构成投资建议。","dateModified":"2026-07-29"}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -365,6 +388,25 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
   .score{grid-template-columns:1fr}
   .ab .row,.pr{grid-template-columns:1fr!important;gap:4px}
 }
+.plainline{margin:14px 0 0;padding:12px 14px;background:#FAF7F2;border-left:3px solid var(--brass);font-size:14px;line-height:1.7;color:var(--ink2)}
+.plainline b{color:var(--ink)}
+.dots{margin:18px 0 2px;border-top:1px solid var(--line);padding-top:14px}
+.dots .dr{display:flex;align-items:center;gap:12px;padding:7px 0;flex-wrap:wrap}
+.dots .dn{font-family:var(--disp);font-weight:700;font-size:15px;min-width:148px;line-height:1.2}
+.dots .dn em{display:block;font-style:normal;font-family:var(--mono);font-size:9.5px;color:var(--soft);letter-spacing:.04em;margin-top:2px;font-weight:400}
+.dots .dd{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.dots .dot{width:15px;height:15px;border-radius:50%;border:2px solid #9BA0A5;display:inline-block;background:#FFF;cursor:help}
+.dots .dot.c.on{background:var(--brass);border-color:var(--brass)}
+.dots .dot.b.on{background:var(--oxide);border-color:var(--oxide)}
+.dots .dot.a.on{background:var(--ink);border-color:var(--ink)}
+.dots .dot.half{border-color:var(--brass);background:linear-gradient(90deg,var(--brass) 50%,#FFF 50%)}
+.dots .dc{font-family:var(--mono);font-size:11px;color:var(--ink2);margin-left:auto;white-space:nowrap}
+.dots .dc b.x{color:var(--oxide)}
+.gloss{border:1px solid var(--line);background:#FCFCFB;padding:16px 18px;margin:16px 0 0}
+.gloss h4{font-family:var(--mono);font-size:10px;letter-spacing:.15em;color:var(--soft);margin:0 0 10px}
+.gloss dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:7px 24px;margin:0}
+.gloss .gi{font-size:12.5px;line-height:1.6;color:var(--ink2)}
+.gloss .gi b{color:var(--ink)}
 @media (max-width:620px){.wrap,.navin{padding:0 16px}body{font-size:15px}.ruleban{padding:18px}}
 </style>
 </head>
@@ -383,7 +425,7 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
 <header class="mast" id="top">
   <div class="kick"><span id="kickCount">19 条监测条件 · 9 条已断 · 1 条口径分歧 · 扳机 0 / 6</span><br>
   本版：计数改为自动核算 · 变现漏斗改多口径 · 新增折旧墙候选 · 反向证据扩容 · 倒计时可录入</div>
-  <h1>AI 泡沫检测仪</h1>
+  <h1>🫧 AI 泡沫检测仪</h1>
   <p class="sub1">不预测日期，只测量位置。三级判定、八个维度、一套明确的撤销条件，
   一节写我可能错在哪，一节审我自己的红线立得住不住。</p>
   <div class="stamp">页面修订 2026-07-29 · 数据截至 2026-07-28<span id="autoStamp"></span> · 每个数字都带日期与出处 · 不构成投资建议</div>
@@ -392,7 +434,9 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
 <div class="ruleban">
   <p class="lab">总判定</p>
   <p class="big">柴堆好了，火药也装了，<u>扳机还没人扣。</u></p>
-  <p>干柴 <b id="vC">6/7</b>（门槛 4，仍然齐），火药 <b id="vB">3/6</b> 刚好压线（门槛 3），扳机 <b id="vA">0/6</b>。<br><br>
+  <p class="plainline">大白话：本页把 19 个风险信号分成三层——<b>干柴</b>（大环境有多易燃）、<b>火药</b>（金融结构有多脆弱）、<b>扳机</b>（有没有事件引爆）。眼下环境易燃、结构脆弱都已成立，但能引爆的事件一件都还没发生。下面一个点 = 一条监测条件：<b>实心 = 已越线</b>，空心 = 未越线，半实心 = 口径分歧（数字对不上，先不计入）。</p>
+  <div class="dots" id="dotBoard"></div>
+  <p style="margin-top:16px">干柴 <b id="vC">6/7</b>（门槛 4，仍然齐），火药 <b id="vB">3/6</b> 刚好压线（门槛 3），扳机 <b id="vA">0/6</b>。<br><br>
   <b>本版干柴从 7/7 降到 6/7</b>——不是行业变好了，是「企业试点 95% 无损益」那条被改记口径分歧：
   红线 90% 设定时的唯一读数就是 95%（和上一版利差红线犯的同一个错——线画在数据后面），
   而且它来自一次性研究，无法复核；McKinsey 的年度口径下它根本没越线。
@@ -400,11 +444,26 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
   火药维持 3/6 压线：再掉一条，火药级就不成立，这个位置比 4/6 更值得注意。
   扳机级要的不是继续恶化，是一次<b>协同事件</b>：有人先转身，其余人被迫跟着转。
   1847 年的铁路和 2000 年的纳斯达克，最后都不是被最后一条坏数据终结的，<b>是被第一个转身的人终结的。</b></p>
-  <div class="score">
-    <div class="scc" data-m="1"><p class="t">C · 干柴（门槛 4）</p><p class="n" id="scC">6 / 7</p><span class="s">过门槛</span></div>
-    <div class="scc" data-m="2"><p class="t">B · 火药（门槛 3）</p><p class="n" id="scB">3 / 6</p><span class="s">压线</span></div>
-    <div class="scc" data-m="0"><p class="t">A · 扳机（门槛 1）</p><p class="n" id="scA">0 / 6</p><span class="s">未扣</span></div>
-  </div>
+</div>
+
+<div class="gloss" id="gloss">
+  <h4>名词速查 · 生词都在这，正文放心读</h4>
+  <dl>
+    <div class="gi"><b>干柴 / 火药 / 扳机</b>：三层风险。柴再干、药再多，没人扣扳机就不炸；反过来扳机一响，前两层决定炸多大。</div>
+    <div class="gi"><b>断（命中）</b>：数据越过红线。<b>压线</b>：命中数刚好到门槛，再退一条就降级。<b>贴线</b>：离红线很近但还没越。</div>
+    <div class="gi"><b>口径分歧</b>：不同机构的统计方法差异太大、数字对不上，按本页规矩不计入命中，单独标半实心。</div>
+    <div class="gi"><b>出生即断</b>：红线设立当天就已越线。只允许出现在干柴层（状态描述）；火药与扳机层禁止——那叫把线画在数据后面。</div>
+    <div class="gi"><b>bp（基点）</b>：0.01%，利率与利差的常用单位，100bp = 1%。</div>
+    <div class="gi"><b>CDS</b>：给债券买的「违约保险」的价格。越贵，市场越怕这家公司还不上钱。</div>
+    <div class="gi"><b>利差</b>：借钱人比美国国债多付的利息，债主收的「风险加价」。走阔 = 债主更害怕。</div>
+    <div class="gi"><b>认购倍数</b>：发债时想买的钱是发行额的几倍。越低，愿意借钱给它的人越少。</div>
+    <div class="gi"><b>RPO / 积压订单</b>：已签合同、还没交付确认成收入的订单余额——「未来收入」的地基。</div>
+    <div class="gi"><b>DSO（收款天数）</b>：卖出东西到收到钱平均要几天。变长 = 客户在拖款。</div>
+    <div class="gi"><b>表外承诺</b>：长期租约等不进资产负债表、但白纸黑字必须付的钱——看得见的债之外的债。</div>
+    <div class="gi"><b>S-1</b>：美股上市前必须公开的招股文件，第一次把全部账目摊给市场看。</div>
+    <div class="gi"><b>自由现金流</b>：经营赚到的现金减去资本开支后剩下的钱。转负 = 赚的不够自己花，得借。</div>
+    <div class="gi"><b>久期错配</b>：用短命资产配长周期投入——GPU 五六年就旧了，电网排队却要四到七年。</div>
+  </dl>
 </div>
 
 <!-- ════ 1. RED LINES ════ -->
@@ -518,7 +577,7 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
 <!-- ════ 3. TIMELINE ════ -->
 <section id="tl">
   <h2 class="sh">倒计时</h2>
-  <p class="q">红框那两行是引信 · 蓝字是对应的历史坐标 · 到期的行会出现「录入结果」，录完变灰并写入日志</p>
+  <p class="q">红框那两行是引信 · 蓝字是对应的历史坐标 · 到期的行会出现「录入结果」，录完变灰（记录只存在你这台浏览器）</p>
   <div class="tl">
     <div class="tlh">两周内 · 能立刻改判断的数字</div>
     <div class="tr2" data-due="2026-07-29" data-tid="fomc-0729"><div class="d">2026-07-29</div><div class="t"><b>FOMC 决议。</b>利率是否维持 3.50–3.75%，声明里有没有点名数据中心或电价。
@@ -570,13 +629,13 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
       <tr><td class="nm" data-l="维度">六 · 引信在这里</td><td class="n bad" data-l="关键数">+58~63%</td>
         <td class="desc" data-l="说明">常规 DRAM 合约价 Q2 环比预估（Q1 是 +90~95%），交期超 40 周，HBM 2026 已售罄。<b>内存暴涨让新服务器造不出来，所以老卡还值钱——它见顶就是抵押品破裂的发令枪。而它已经在减速。</b></td></tr>
       <tr><td class="nm" data-l="维度">七 · 建不出来</td><td class="n bad" data-l="关键数">5 / 16 GW</td>
-        <td class="desc" data-l="说明">2026 年在建对宣布容量。30–50% 管道预计延期或取消，并网等待 4–7 年，燃气轮机交期 5–7 年（价格自 2019 年涨 195%）。ERCOT 大负荷队列一年从 63GW 涨到 226GW，数据中心占 77%。</td></tr>
+        <td class="desc" data-l="说明">2026 年在建对宣布容量。30–50% 管道预计延期或取消，并网（新项目接入电网）等待 4–7 年，燃气轮机交期 5–7 年（价格自 2019 年涨 195%）。ERCOT 大负荷队列一年从 63GW 涨到 226GW，数据中心占 77%。</td></tr>
       <tr><td class="nm" data-l="维度">八 · 越建越贵</td><td class="n bad" data-l="关键数">0.5 个百分点</td>
         <td class="desc" data-l="说明">AI 资本支出对 GDP 增长的贡献（Pantheon）。核心 PCE <span data-auto="pce_yoy">3.4%</span>，市场在给加息定价。PJM 认定数据中心是容量成本上涨首因，归因 +174%；2025 年居民电价 +7.1%。<b>停下来是增长冲击，不只是板块调整。</b></td></tr>
     </tbody>
   </table></div></div>
   <p class="note"><b>分层读法：脆弱不是均匀分布的。</b>应用层在改善——企业 AI 投资过半流向应用（约 190 亿，Menlo），至少 10 个产品 ARR 超 10 亿美元，ICONIQ 口径 AI 产品毛利率 45%→53%（预计）；模型层在烧钱——维度二那组数；基建层在加杠杆——维度三、四。
-  <b>本页红线几乎全部落在后两层。这是选择，不是疏漏：应用层的改善救不了基建层的久期错配，但它决定了清算之后谁来接盘。</b></p>
+  <b>本页红线几乎全部落在后两层。这是选择，不是疏漏：应用层的改善救不了基建层的久期错配（短命资产配长周期投入），但它决定了清算之后谁来接盘。</b></p>
 </section>
 
 <!-- ════ 5. ORACLE ════ -->
@@ -953,9 +1012,9 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
       候选线：四家合计折旧同比增速连续两季超过云与 AI 收入同比增速。
       <b>按本页自己的规矩，进火药级前必须先去 10-Q 核实这个交叉是否已经发生——若出生即断，只能进干柴当状态描述。</b></div>
     <div class="it"><span class="tagx" data-t="add">增</span>
-      <b>计数改为自动核算。</b>上一版页首、章节标题、注释、表格四处计数互相矛盾（十八 / 十六 / 十二 / 十一 / 实际十）。
-      对一个卖点是「每个数字都带日期与出处」的页面，记分牌自己对不上是致命伤。
-      本版起页首、总判定、记分牌、层级标题全部由层级条目实时计算，<b>这类漂移在结构上不再可能。</b></div>
+      <b>计数改为自动核算。</b>页首、总判定、点状图、层级标题全部由层级条目实时计算——
+      手改计数迟早漂移，对一个卖点是「每个数字都带日期与出处」的页面，
+      记分牌必须<b>在结构上不可能</b>和条目对不上。</div>
   </div>
 
   <div class="gap" style="margin-top:18px">
@@ -1039,10 +1098,10 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
 
   <div class="dyn">
     <div class="dynh"><h3>更新机制的边界 —— 先说清楚什么能自动、什么不能</h3>
-      <p>联网搜索对「事件」可靠、对「价格」不可靠 · 所以按数据类型分了两条路</p></div>
+      <p>事件与价格分两条路走 · 页面数字不凭印象改</p></div>
     <div class="dynb">
       <div class="boundary">
-        <div class="bcol can"><h5>✓ 刷新按钮能查的（事件型）</h5>
+        <div class="bcol can"><h5>✓ 事件型 —— 定期人工核查（每周一 / 周四更新）</h5>
           <ul>
             <li><b>评级动作</b>——降级、展望变化有正式公告，搜索结果可信。</li>
             <li><b>S-1 进展</b>——公开版发布、定价区间、推迟、撤回都是新闻事件。</li>
@@ -1051,27 +1110,21 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
             <li><b>方向判断</b>——DRAM 环比是正是负、集中度是升是降，只要方向不要数值。</li>
           </ul>
         </div>
-        <div class="bcol cant"><h5>✗ 刷新按钮不查的（价格型）</h5>
+        <div class="bcol cant"><h5>✗ 价格型 —— 只认原始来源</h5>
           <ul>
             <li><b>CDS、利差、认购倍数、租赁价</b>——搜索引擎给不出可靠的当日值，宁缺毋滥。</li>
             <li><b>这些数必须回原始来源手抄</b>——路径在下面的「手抄清单」里。</li>
-            <li><b>页面数字不自动改</b>——任何数值变更都要人工核对后修改，并记入变更日志。</li>
+            <li><b>页面数字不凭印象改</b>——任何数值变更都要人工核对后修改，变更连同依据一起留痕在仓库提交历史里。</li>
             <li><b>两条例外已接官方 API 自动管线</b>——核心 PCE（FRED·PCEPILFE）与单 A 公司债 OAS 参考（FRED·BAMLC0A3CA）由 GitHub Actions 每个工作日抓取写入 data/auto.json，页面加载时替换显示、页首标注刷新日期；自动值与本文快照判定不一致时标 ⚠ 等人工核对。<b>自动管线只改显示，不改判定。</b></li>
           </ul>
         </div>
       </div>
-      <div class="btnrow">
-        <button class="act" id="btnRefresh">联网核查事件（约 30 秒）</button>
-        <button class="act g" id="btnClear">清空候选区</button>
-        <span class="stat" id="statLine">候选仅存在本浏览器，不会同步。</span>
-      </div>
-      <div id="candBox" style="margin-top:16px"></div>
     </div>
   </div>
 
   <div class="dyn">
     <div class="dynh"><h3>手抄清单 —— 价格类数据的更新路径</h3>
-      <p>刷新按钮只查事件 · 这些数回原始来源手抄 · 抄完顺手改页首的「数据截至」</p></div>
+      <p>价格类数据的原始来源 · 更新后顺手改页首的「数据截至」</p></div>
     <div class="dynb" style="padding:0">
       <div class="rl" style="border:none"><div class="in"><table class="tmin">
         <colgroup><col style="width:27%"><col style="width:31%"><col style="width:11%"><col style="width:31%"></colgroup>
@@ -1092,13 +1145,6 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
     </div>
   </div>
 
-  <div class="dyn">
-    <div class="dynh"><h3>变更日志 —— 这页自己的审计轨迹</h3>
-      <p>每次删改增都留痕 · 采纳的候选和揭晓的倒计时也会写进来</p></div>
-    <div class="dynb" style="padding:0">
-      <div class="log" id="logBox"></div>
-    </div>
-  </div>
 </section>
 
 <!-- ════ 14. SOURCES ════ -->
@@ -1131,7 +1177,7 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
     <div class="link"><a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noopener">McKinsey · State of AI</a>
       <p>变现漏斗年度口径（88% 在用 / 39% 有企业级 EBIT 影响）的刷新源。坑：受访者自报，偏差方向未知。</p></div>
     <div class="link"><span class="nol">报告日历（无链接）</span>
-      <p>a16z Top 100 第 7 版约 8–9 月 · Stack Overflow 2026 结果 9–10 月 · Air Street State of AI 10 月 · Menlo 年度版 11–12 月 · AEI 约季更。<b>到点没等到，也记一条日志。</b></p></div>
+      <p>a16z Top 100 第 7 版约 8–9 月 · Stack Overflow 2026 结果 9–10 月 · Air Street State of AI 10 月 · Menlo 年度版 11–12 月 · AEI 约季更。<b>到点没等到，本身就是信号。</b></p></div>
   </div>
 
   <footer class="ft">
@@ -1139,7 +1185,7 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
     它是一种阅读方式，不是经过验证的预测模型。红线数值全是我的判断而非事实，历史锚点凡有口径分歧的都已摊开。<br>
     <b>利益冲突：</b>这页由 Claude（Anthropic 的模型）整理。Anthropic 是这场资本周期的参与者——凡涉及 Anthropic 或其竞争对手的判断，请自行打折。<br>
     <b>页面修订 2026-07-29 · 数据截至 2026-07-28。</b>页首与记分牌的计数由脚本实时核算，禁用脚本时显示 07-29 快照值；
-    候选、变更日志、倒计时结果只存在当前浏览器本地，不会同步到任何服务器。<br>
+    倒计时的录入结果只存在当前浏览器本地，不会同步到任何服务器。<br>
     不构成投资建议。每个数字都带日期与出处，欢迎逐条证伪。
   </footer>
 </section>
@@ -1230,34 +1276,41 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
     var tc=document.querySelector('[data-tc="c"]'); if(tc) tc.textContent=C.h+' / '+C.t+' 命中'+(C.d?(' · '+C.d+' 条口径分歧'):'');
   }
 
-  /* ── 本地状态：候选 / 日志 / 倒计时结果 ── */
-  var KEY_C='bubble-cands-v1', KEY_L='bubble-log-v1', KEY_T='bubble-timeline-v1';
-  var cands=[], log=[], tout={};
-  var SEED_LOG=[
-    {d:'2026-07-28',k:'del',t:'<b>删「微软年内跌超 20%」红线</b>——用股价预测泡沫是循环论证，两个方向都能自圆其说。'},
-    {d:'2026-07-28',k:'fix',t:'<b>巨头投资级利差红线 70 → 100bp</b>——原线设定时实际值已 78bp，线画在了数据后面。'},
-    {d:'2026-07-28',k:'fix',t:'<b>甲骨文长债利差 450bp 降级为参考</b>——阈值无依据，且与 CDS 重复计数。'},
-    {d:'2026-07-28',k:'add',t:'<b>扳机新增「下修积压订单 / RPO」</b>——不可逆且逼人行动，营收能挤、backlog 下修没法解释。'},
-    {d:'2026-07-28',k:'add',t:'<b>火药新增「英伟达前三客户占应收 &gt;60%」</b>——已命中：64%，上季 56%。'},
-    {d:'2026-07-28',k:'add',t:'<b>干柴新增第七条「官方机构公开警告」</b>——BIS 系统性风险研究 + 美财政部内部草案（NOTUS 7/6 披露）。'},
-    {d:'2026-07-28',k:'add',t:'<b>候选新增「再保险可承保额度」</b>——单站造价 200 亿美元而再保只能承接一小部分；有约束、无阈值，不计分。'},
-    {d:'2026-07-28',k:'fix',t:'<b>盲点三补 CoWoS</b>——先进封装被英伟达优先分配锁走，谷歌 TPU 2026 目标 −25%；自研有物理天花板，钥匙在英伟达手里。'},
-    {d:'2026-07-29',k:'fix',t:'<b>计数改为自动核算</b>——页首、总判定、记分牌、层级标题全部由层级条目实时计算；上一版四处计数互相矛盾（18/16/12/11）。'},
-    {d:'2026-07-29',k:'fix',t:'<b>「企业试点 95%」改记口径分歧，干柴 7/7 → 6/7</b>——线画在数据后面 + 一次性研究不可复核；摊开三口径（MIT 95% / McKinsey 61% / Wing 32%），总判定不变，正因为不变才更该改。'},
-    {d:'2026-07-29',k:'add',t:'<b>审计新增「出生即断」豁免规则</b>——干柴允许生来即满足，禁令只约束火药与扳机；PCE、表外承诺、前七权重按此豁免。'},
-    {d:'2026-07-29',k:'add',t:'<b>候选新增「折旧墙」</b>——四季购置 4,339 亿 vs 折旧 1,490 亿（2.9 倍）；候选线为折旧增速连续两季超云+AI 收入增速，进级前须先核实是否已交叉。'},
-    {d:'2026-07-29',k:'add',t:'<b>反向证据扩容</b>——使用时长翻倍（Sensor Tower）、ICONIQ 毛利率 41→45→53→59e、Gemini 服务成本 −78%、AEI 使用多样化；并配 ICONIQ 固定成本仅 26–28% 的反证保持对称。'},
-    {d:'2026-07-29',k:'add',t:'<b>盲点一获得三个半指标</b>——METR 任务时长、Epoch 能力基准、AEI 多样化、前沿溢价（半个）；盲点二补中国平行周期（日均 token 140 万亿、国产卡 41%）。'},
-    {d:'2026-07-29',k:'fix',t:'<b>缺口一、四升级</b>——私募信贷补 ABS/CMBS 公开代理；算力租赁商设 CoreWeave 为带评级哨兵，并补 7/1 Meta Compute 传导（neocloud 当日 −10~15%）。'},
-    {d:'2026-07-29',k:'add',t:'<b>倒计时增加到期录入 + 刷新查询扩容</b>——新增 S-1 推迟、DRAM 方向、10-Q 集中度、neocloud 事件四类核查；OpenAI 扳机补份额背景（企业 API 50% → 27%）。'},
-    {d:'2026-07-29',k:'del',t:'<b>滑块版下线，监测面板成为首页</b>——娱乐向计算器与监测仪器定位冲突；旧地址 monitor.html 保留重定向，本浏览器的候选/日志/录入不受影响。'},
-    {d:'2026-07-29',k:'add',t:'<b>接入自动数据管线</b>——GitHub Actions 每个工作日抓 FRED（核心 PCE 同比 + 单 A OAS 参考）写 data/auto.json，页面水合显示、与快照判定不一致时标 ⚠；其余价格数字仍走手抄清单，事件仍走人工核查，<b>自动管线只改显示，不改判定</b>。'}
-  ];
+  /* ── 总判定点状图：一个点 = 一条监测条件，直接读层级块状态 ── */
+  function dotBoard(){
+    var el=$('dotBoard'); if(!el) return;
+    var TIERS=[
+      {cls:'c', name:'干柴', gloss:'大环境 · 有多易燃', th:4},
+      {cls:'b', name:'火药', gloss:'金融结构 · 有多脆弱', th:3},
+      {cls:'a', name:'扳机', gloss:'引爆事件 · 响一条就算', th:1}
+    ];
+    var html='';
+    for (var t=0;t<TIERS.length;t++){
+      var T=TIERS[t];
+      var items=document.querySelectorAll('.tier.'+T.cls+' .ti');
+      var h=0, dd='';
+      for (var i=0;i<items.length;i++){
+        var v=items[i].getAttribute('data-h');
+        if(v==='1') h++;
+        var b=items[i].querySelector('b');
+        var nm=(b? b.textContent:'').replace(/\s+/g,' ');
+        var st=v==='1'?'已断':(v==='d'?'口径分歧':'未断');
+        dd+='<i class="dot '+T.cls+(v==='1'?' on':(v==='d'?' half':''))+'" title="'+esc(nm)+' —— '+st+'"></i>';
+      }
+      var stTxt;
+      if(T.cls==='a') stTxt = h>0? '已触发':'未扣';
+      else stTxt = h>=T.th? (h===T.th? '压线':'过门槛') : '未到门槛';
+      html+='<div class="dr"><span class="dn">'+T.name+'<em>'+T.gloss+'</em></span>'
+        +'<span class="dd">'+dd+'</span>'
+        +'<span class="dc">'+h+' / '+items.length+' · 门槛 '+T.th+' · <b'+(h>=T.th?' class="x"':'')+'>'+stTxt+'</b></span></div>';
+    }
+    el.innerHTML=html;
+  }
 
-  /* ── 存储适配：在 Claude 里用 window.storage；公网（GitHub Pages）退回 localStorage；都不可用则仅本次会话内存 ── */
-  var IN_CLAUDE = !!(window.storage && window.storage.get);
+  /* ── 本地状态：倒计时录入结果（仅存本浏览器，localStorage） ── */
+  var KEY_T='bubble-timeline-v1';
+  var tout={};
   var store = (function(){
-    if (IN_CLAUDE) return window.storage;
     try {
       var t='__bd_probe__'; localStorage.setItem(t,'1'); localStorage.removeItem(t);
       return {
@@ -1268,139 +1321,9 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
   })();
   function loadState(cb){
     if(!store){ cb(); return; }
-    var got=0;
-    function done(){ got++; if(got>=3) cb(); }
-    store.get(KEY_C).then(function(r){ if(r&&r.value){ try{cands=JSON.parse(r.value)||[];}catch(e){} } done(); }).catch(function(){ done(); });
-    store.get(KEY_L).then(function(r){ if(r&&r.value){ try{log=JSON.parse(r.value)||[];}catch(e){} } done(); }).catch(function(){ done(); });
-    store.get(KEY_T).then(function(r){ if(r&&r.value){ try{tout=JSON.parse(r.value)||{};}catch(e){} } done(); }).catch(function(){ done(); });
+    store.get(KEY_T).then(function(r){ if(r&&r.value){ try{tout=JSON.parse(r.value)||{};}catch(e){} } cb(); }).catch(function(){ cb(); });
   }
-  function saveC(){ if(store){ try{ var p=store.set(KEY_C, JSON.stringify(cands)); if(p&&p.catch)p.catch(function(){}); }catch(e){} } }
-  function saveL(){ if(store){ try{ var p=store.set(KEY_L, JSON.stringify(log)); if(p&&p.catch)p.catch(function(){}); }catch(e){} } }
   function saveT(){ if(store){ try{ var p=store.set(KEY_T, JSON.stringify(tout)); if(p&&p.catch)p.catch(function(){}); }catch(e){} } }
-
-  /* ── 变更日志渲染：种子 + 本地新增，新的在上 ── */
-  function renderLog(){
-    var box=$('logBox'); if(!box) return;
-    var all=SEED_LOG.concat(log);
-    var html='';
-    for (var i=all.length-1;i>=0;i--){
-      var e=all[i];
-      html+='<div class="lr"><span class="ld2">'+esc(e.d)+'</span>'
-        +'<span class="lk" data-k="'+esc(e.k)+'">'+({add:'增',del:'删',fix:'改',hit:'记'}[e.k]||'记')+'</span>'
-        +'<span class="lt">'+e.t+'</span></div>';
-    }
-    box.innerHTML=html;
-  }
-
-  /* ── 候选区 ── */
-  function renderCands(){
-    var box=$('candBox'); if(!box) return;
-    if(!cands.length){
-      box.innerHTML='<p class="stat">候选区为空。点上面的按钮联网核查，命中的事件会先进这里，由你决定采纳或忽略——页面数字永远不自动改。</p>';
-      return;
-    }
-    var html='';
-    for (var i=0;i<cands.length;i++){
-      var c=cands[i];
-      html+='<div class="cand"><div class="ct">'+esc(c.text)+'</div>'
-        +'<div class="cm">'+esc(c.src||'来源见搜索结果')+' · 抓取于 '+esc(c.d)+'</div>'
-        +'<div class="cb"><button class="sm" data-act="ok" data-i="'+i+'">采纳，记入日志</button>'
-        +'<button class="sm no" data-act="no" data-i="'+i+'">忽略</button></div></div>';
-    }
-    box.innerHTML=html;
-    var btns=box.querySelectorAll('button[data-act]');
-    for (var b=0;b<btns.length;b++){
-      (function(btn){
-        btn.onclick=function(){
-          var i=parseInt(btn.getAttribute('data-i'),10);
-          var c=cands[i]; if(!c) return;
-          if(btn.getAttribute('data-act')==='ok'){
-            log.push({d:today(),k:'add',t:'<b>候选采纳：</b>'+esc(c.text)+(c.src? '（'+esc(c.src)+'）':'')});
-            saveL(); renderLog();
-          }
-          cands.splice(i,1); saveC(); renderCands();
-        };
-      })(btns[b]);
-    }
-  }
-
-  /* ── 联网核查（只查事件，不查价格）── */
-  var PROMPT=[
-    '你在维护一个 AI 基建泡沫的风险监控页面。请联网搜索，只回答「事件」，不要回答任何价格、收益率、利差、租赁价的具体数值——搜索结果对价格不可靠。',
-    '',
-    '需要核查的事件类型（只报 2026 年 7 月以来的新进展）：',
-    '1. 甲骨文、CoreWeave、Nebius 或任何超大规模云厂商的信用评级动作或展望变化',
-    '2. OpenAI 或 Anthropic 的 S-1 进展、定价区间、上市、推迟或撤回——「推迟」也要报',
-    '3. 是否有任何巨头下调资本支出指引，或下修积压订单 / RPO',
-    '4. 是否出现大额芯片资产减值、GPU 抵押品清算拍卖',
-    '5. 官方机构（央行、财政部、BIS、IMF）新发布的相关警告',
-    '6. DRAM 或 HBM 合约价环比是否转负（只要方向判断，不要具体数值）',
-    '7. 英伟达最新 10-Q 是否披露客户集中度显著变化（只要方向）',
-    '8. 算力租赁商（CoreWeave、Nebius、Crusoe、IREN 等）的大客户流失、再融资异常或违约传闻',
-    '9. 其他上述清单未覆盖的、新出现的 AI 基建风险事件',
-    '',
-    '只返回一个 JSON 数组，不要任何其他文字、不要 Markdown 代码块。每个元素形如 {"text":"一句话事件描述（中文，含日期）","src":"来源名"}。没有新事件就返回 []。'
-  ].join('\n');
-
-  function refresh(){
-    var btn=$('btnRefresh'), stat=$('statLine');
-    if(!btn) return;
-    btn.disabled=true; if(stat) stat.textContent='联网核查中，约 30 秒…';
-    fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({
-        model:'claude-sonnet-4-6',
-        max_tokens:1000,
-        messages:[{role:'user',content:PROMPT}],
-        tools:[{type:'web_search_20250305',name:'web_search'}]
-      })
-    }).then(function(r){ return r.json(); }).then(function(data){
-      if(data && data.type==='error'){ throw new Error((data.error&&data.error.message)||'API error'); }
-      var text=(data.content||[]).filter(function(it){return it.type==='text';})
-        .map(function(it){return it.text||'';}).join('\n');
-      var clean=text.replace(/```json|```/g,'').trim();
-      var arr=[];
-      try{
-        var s=clean.indexOf('['), e2=clean.lastIndexOf(']');
-        if(s>=0&&e2>s) arr=JSON.parse(clean.slice(s,e2+1));
-      }catch(err){ arr=[]; }
-      var added=0;
-      for (var i=0;i<arr.length;i++){
-        var o=arr[i];
-        if(!o||!o.text) continue;
-        var dupC=false, dupL=false, x;
-        for (x=0;x<cands.length;x++){ if(cands[x].text===o.text){ dupC=true; break; } }
-        for (x=0;x<log.length;x++){ if((log[x].t||'').indexOf(esc(o.text))>=0){ dupL=true; break; } }
-        if(dupC||dupL) continue;
-        cands.push({text:String(o.text), src:String(o.src||''), d:today()});
-        added++;
-      }
-      saveC(); renderCands();
-      if(stat) stat.textContent = added? ('新增 '+added+' 条候选，待你审。') : '没有新事件（或与已有候选/日志重复）。';
-    }).catch(function(err){
-      if(stat) stat.textContent = IN_CLAUDE
-        ? ('核查失败：'+(err&&err.message?err.message:'网络错误')+'。稍后再试。')
-        : '公网版没有 API 凭证，联网核查只在 Claude 里打开本页时可用——请按下方手抄清单人工更新。';
-    }).then(function(){ btn.disabled=false; });
-  }
-
-  /* ── 清空候选：两步确认（不用 confirm，沙箱里可能被静默拦截）── */
-  function wireClear(){
-    var c=$('btnClear'), stat=$('statLine'); if(!c) return;
-    var armed=false, tmr=null;
-    c.onclick=function(){
-      if(!cands.length){ if(stat) stat.textContent='候选区本来就是空的。'; return; }
-      if(!armed){
-        armed=true; c.textContent='再点一次确认清空'; c.classList.add('arm');
-        tmr=setTimeout(function(){ armed=false; c.textContent='清空候选区'; c.classList.remove('arm'); },4000);
-        return;
-      }
-      clearTimeout(tmr); armed=false; c.textContent='清空候选区'; c.classList.remove('arm');
-      cands=[]; saveC(); renderCands();
-      if(stat) stat.textContent='候选区已清空（已记入日志的不受影响）。';
-    };
-  }
 
   /* ── 倒计时：到期录入 ── */
   function markDone(row, o){
@@ -1441,8 +1364,6 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
             var v=(inp.value||'').replace(/^\s+|\s+$/g,''); if(!v) return;
             var d=today();
             tout[tid]={d:d, text:v}; saveT();
-            log.push({d:d, k:'hit', t:'<b>倒计时揭晓 · '+esc(row.getAttribute('data-title'))+'</b> —— '+esc(v)});
-            saveL(); renderLog();
             markDone(row, tout[tid]);
             form=null;
           };
@@ -1457,8 +1378,8 @@ button.sm.no:hover{border-color:var(--oxide);color:var(--oxide)}
 
   /* ── 启动 ── */
   counts();
-  var rb=$('btnRefresh'); if(rb) rb.onclick=refresh;
-  loadState(function(){ renderLog(); renderCands(); wireClear(); tlBoot(); });
+  dotBoard();
+  loadState(function(){ tlBoot(); });
 })();
 </script>
 <script>
