@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29T15:58:59Z",
+  "updated_at": "2026-07-30T16:01:19Z",
   "series": {
     "pce_yoy": {
       "value": 3.4,
@@ -10,7 +10,7 @@
     "a_oas": {
       "value": 68,
       "unit": "bp",
-      "asof": "2026-07-28",
+      "asof": "2026-07-29",
       "source": "FRED BAMLC0A3CA"
     }
   },
