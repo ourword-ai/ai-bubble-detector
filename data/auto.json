@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-07-30T16:01:19Z",
+  "updated_at": "2026-08-03T16:42:21Z",
   "series": {
     "pce_yoy": {
-      "value": 3.4,
+      "value": 3.3,
       "unit": "%",
-      "asof": "2026-05-01",
+      "asof": "2026-06-01",
       "source": "FRED PCEPILFE (YoY)"
     },
     "a_oas": {
-      "value": 68,
+      "value": 67,
       "unit": "bp",
-      "asof": "2026-07-29",
+      "asof": "2026-07-30",
       "source": "FRED BAMLC0A3CA"
     }
   },
