@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T16:12:09Z",
+  "updated_at": "2026-08-07T15:11:01Z",
   "series": {
     "pce_yoy": {
       "value": 3.3,
@@ -8,9 +8,9 @@
       "source": "FRED PCEPILFE (YoY)"
     },
     "a_oas": {
-      "value": 65,
+      "value": 64,
       "unit": "bp",
-      "asof": "2026-08-03",
+      "asof": "2026-08-05",
       "source": "FRED BAMLC0A3CA"
     }
   },
