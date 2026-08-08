@@ -1,9 +1,28 @@
-# AI 泡沫检测仪 · AI Bubble Monitor
+# AI Bubble Monitor (AI 泡沫检测仪)
 
-> 20 条红线实时监测 AI 基建泡沫的公开面板。三级判定：环境（宏观土壤）、结构（金融脆弱度）、引爆（触发事件）。每个数字都带日期与出处，附撤销条件、证伪清单与红线自审。不构成投资建议。
+> 20 falsifiable red lines on the AI build-out, checked against live numbers
+> 20 条红线实时监测 AI 基建泡沫，环境 / 结构 / 引爆三级判定
 
-- 站点: https://ourword-ai.github.io/ai-bubble-detector/
-- 判定读法: 引爆发生一条就当顶部已过；结构断 ≥3 条一碰就塌；环境断 ≥4 条泡沫温床已就绪。计数由页面脚本从条目实时核算。
-- 数据更新: 核心 PCE 同比与单 A 公司债 OAS 参考由 GitHub Actions 每个工作日从 FRED 自动抓取（/data/auto.json）；其余指标每周一、周四按原始来源人工核对更新；所有变更留痕于仓库提交历史。
-- 方法: 与 1847 英国铁路狂热、2000 互联网泡沫做八阶段对照；红线阈值只接受三类依据（市场惯例 / 机械后果 / 物理约束），禁止把线画在数据后面；含「我可能错在哪」与「什么会证明我错了」两节自我证伪。
-- 仓库: https://github.com/ourword-ai/ai-bubble-detector
+A falsifiable monitor of the AI infrastructure build-out: twenty named red lines, each with a threshold written down in advance, graded into environment risk, structural fragility and detonation. It states what would prove it wrong, keeps a public log of every time it changed its mind, and lists the blind spots it knows it has. It is a monitor, not investment advice.
+
+一份可证伪的 AI 基建泡沫监测：20 条具名红线，每条的阈值都事先写死，分成「环境风险 / 结构脆弱 / 引爆事件」三级判定。它写明自己什么情况下算错、公开记录每一次改口、并列出自己已知的盲点。这是一份监测表，不是投资建议。
+
+## Read it
+
+- Site: https://ourword.ai/ai-bubble-detector/
+- Every report has its own static page: https://ourword.ai/ai-bubble-detector/i/<slug>/ (English) and https://ourword.ai/ai-bubble-detector/zh/i/<slug>/ (中文)
+- Full text of everything, one file: https://ourword.ai/ai-bubble-detector/llms-full.txt
+- All URLs: https://ourword.ai/ai-bubble-detector/sitemap.xml
+- Part of OurWord AI: https://ourword.ai/
+
+## How it is built
+
+Thresholds are written down before the data arrives, so each line can only be broken or not broken. Numbers come from public filings, exchange data and vendor disclosures, refreshed automatically into data/auto.json; every revision is logged in public, including the ones where the author was wrong.
+
+## Citing
+
+Cite this page with the date — the grading changes as lines break and un-break. Attribute to "AI 泡沫检测仪 / AI Bubble Monitor (OurWord AI)". It is a falsifiable monitor, not investment advice.
+
+## Index (1 report)
+
+- [AI Bubble Monitor](https://ourword.ai/ai-bubble-detector/): A falsifiable monitor of the AI infrastructure build-out: twenty named red lines, each with a threshold written down in advance, graded into environment risk, structural fragility and detonation. It s

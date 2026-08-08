@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AI Bubble Monitor — 20 falsifiable red lines on the AI build-out, checked against live numbers</title>
+    <link>https://ourword.ai/ai-bubble-detector/</link>
+    <description>A falsifiable monitor of the AI infrastructure build-out: twenty named red lines, each with a threshold written down in advance, graded into environment risk, structural fragility and detonation. It states what would prove it wrong, keeps a public log of every time it changed its mind, and lists the blind spots it knows it has. It is a monitor, not investment advice.</description>
+    <language>en</language>
+    <item><title>AI Bubble Monitor</title><link>https://ourword.ai/ai-bubble-detector/</link><guid isPermaLink="true">https://ourword.ai/ai-bubble-detector/</guid><description>A falsifiable monitor of the AI infrastructure build-out: twenty named red lines, each with a threshold written down in advance, graded into environment risk, structural fragility and detonation. It states what would prove it wrong, keeps a public log of every time it changed its mind, and lists the blind spots it knows it has. It is a monitor, not investment advice.</description></item>
+  </channel>
+</rss>
