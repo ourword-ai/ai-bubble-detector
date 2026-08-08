@@ -29,11 +29,12 @@ SITE = G.Site(
         "public log of every time it changed its mind, and lists the blind spots it knows "
         "it has. It is a monitor, not investment advice."),
     description_zh=(
-        "一份可证伪的 AI 基建泡沫监测：20 条具名红线，每条的阈值都事先写死，分成"
-        "「环境风险 / 结构脆弱 / 引爆事件」三级判定。它写明自己什么情况下算错、"
-        "公开记录每一次改口、并列出自己已知的盲点。这是一份监测表，不是投资建议。"),
-    keywords=("AI 泡沫, AI 基建 泡沫, 英伟达 需求, 数据中心 资本开支, 算力 过剩, 甲骨文 债务, "
-              "AI capex bubble, AI infrastructure bubble indicators, circular financing"),
+        "AI 泡沫到哪一步了？20 条红线实时监测 AI 基建泡沫：环境（宏观土壤）/ 结构"
+        "（金融脆弱度）/ 引爆（触发事件）三级判定、倒计时、八维度、与 1847 铁路和 2000 "
+        "互联网泡沫对照。每个数字都带日期与出处，附撤销条件与证伪清单。不构成投资建议。"),
+    keywords=("AI 泡沫, AI bubble, AI 基建, 泡沫监测, 英伟达, 甲骨文, OpenAI IPO, 数据中心, "
+              "资本支出, AI bubble monitor, AI capex bubble, circular financing"),
+    image="https://ourword.ai/ai-bubble-detector/og-image.png",
     item_type="Article", item_noun="report", item_noun_zh="报告",
     lang="zh-Hans", changefreq="daily",
 )
