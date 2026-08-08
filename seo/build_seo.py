@@ -76,6 +76,13 @@ def main():
                   item_pages=False, extra_ld=ld,
                   extra_urls=["https://ourword.ai/ai-bubble-detector/monitor.html"],
                   extra_sitemaps=["https://ourword.ai/sitemap.xml"])
+    # monitor.html is in the sitemap, so it needs its own canonical and signals too.
+    rep["monitor"] = G.patch_page(
+        "monitor.html", SITE, "monitor.html",
+        "红线仪表盘 — %s" % SITE.name_zh,
+        "AI 泡沫检测仪的红线仪表盘：20 条监测条件的当前读数、阈值与距离，"
+        "按环境 / 结构 / 引爆三级分档，每条都能点开看数据来源。",
+        h1="红线仪表盘")
     rep["sections"] = len(secs)
     print("ai-bubble-detector seo/geo:", json.dumps(rep, ensure_ascii=False))
     return rep
