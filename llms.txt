@@ -10,10 +10,11 @@ A falsifiable monitor of the AI infrastructure build-out: twenty named red lines
 ## Read it
 
 - Site: https://ourword.ai/ai-bubble-detector/
-- Every report has its own static page: https://ourword.ai/ai-bubble-detector/i/<slug>/ (English) and https://ourword.ai/ai-bubble-detector/zh/i/<slug>/ (中文)
+- Everything on one page: https://ourword.ai/ai-bubble-detector/all/
+- Every report has its own static page: https://ourword.ai/ai-bubble-detector/i/<slug>/ — plus https://ourword.ai/ai-bubble-detector/zh/i/<slug>/ where there is Chinese copy
 - Full text of everything, one file: https://ourword.ai/ai-bubble-detector/llms-full.txt
 - All URLs: https://ourword.ai/ai-bubble-detector/sitemap.xml
-- Part of OurWord AI: https://ourword.ai/
+- RSS: https://ourword.ai/ai-bubble-detector/feed.xml
 
 ## How it is built
 
@@ -23,6 +24,16 @@ Thresholds are written down before the data arrives, so each line can only be br
 
 Cite this page with the date — the grading changes as lines break and un-break. Attribute to "AI 泡沫检测仪 / AI Bubble Monitor (OurWord AI)". It is a falsifiable monitor, not investment advice.
 
+## The rest of OurWord AI
+
+- [OurWord AI / OurWord AI](https://ourword.ai/)
+- [Idea / 灵感看板](https://ourword.ai/idea/)
+- [Skill Store / Skill 商店](https://ourword.ai/skill-store/)
+- [The Restructuring of Work / 工作的重构](https://ourword.ai/ai-jobs-20yr-report/)
+- [Human World / 人类世界生存法则](https://ourword.ai/HumanWorld/)
+- [Zouni / 走你](https://ourword.ai/zouni/)
+- [Market Watch / 投资观察仪表盘](https://ourword.ai/portfolio-tracker/)
+
 ## Index (1 report)
 
-- [AI Bubble Monitor](https://ourword.ai/ai-bubble-detector/): A falsifiable monitor of the AI infrastructure build-out: twenty named red lines, each with a threshold written down in advance, graded into environment risk, structural fragility and detonation. It s
+- [AI Bubble Monitor](https://ourword.ai/ai-bubble-detector/): A falsifiable monitor of the AI infrastructure build-out: twenty named red lines, each with a threshold written down in advance, graded into environment risk, structural fragility and detonation. It…
